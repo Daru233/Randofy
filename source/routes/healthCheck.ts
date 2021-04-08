@@ -1,8 +1,8 @@
 import express from 'express';
-import controller from '../controllers/healthCheck';
+import controller from '../controllers/HealthCheck';
 
 const router = express.Router();
 
-router.get('/ping', controller.sampleHealthCheck);
+router.get('/', controller.sampleHealthCheck);
 
 export = router;

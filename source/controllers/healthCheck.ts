@@ -1,13 +1,13 @@
 import { Request, Response, NextFunction } from 'express';
 import logging from '../config/logging';
 
-const NAMESPACE = 'Sample Controller';
+const NAMESPACE = 'Health-Check';
 
 const sampleHealthCheck = (req: Request, res: Response, next: NextFunction) => {
-    logging.info(NAMESPACE, `Server was pinged, sending pong`);
+    logging.info(NAMESPACE, ``);
 
     return res.status(200).json({
-        message: 'pong'
+        status: 'available'
     });
 };
 
