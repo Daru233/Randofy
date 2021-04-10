@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "ts-node source/server.ts",
-    "build": "rm -rf build/ && prettier --write source/ && tsc",
+    "transpile-js": "rm -rf build/ && prettier --write source/ && tsc",
+    "build": "ts-node source/server.ts",
     "test": "jest --detectOpenHandles"
   },
   "repository": {
