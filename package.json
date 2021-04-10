@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "ts-node source/server.ts",
-    "transpile-js": "rm -rf build/ && prettier --write source/ && tsc",
+    "transpile-js": "rm -rf build/ && prettier --write source/ && tsc && cp package.json build/ %% cp package-lock.json build/",
     "build": "ts-node source/server.ts",
     "test": "jest --detectOpenHandles"
   },
