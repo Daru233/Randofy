@@ -24,4 +24,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Generating build
+          npm ci
           npm run transpile-js
