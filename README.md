@@ -1,2 +1,0 @@
-# randofy
-Discover music easily.
